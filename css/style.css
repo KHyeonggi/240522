@@ -1,0 +1,62 @@
+div{
+    color: white;
+}
+body{
+    margin: 5px;
+    height: 4000px;
+
+}
+.container{
+    width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+    border: solid 1px black;
+    background-color: darkgrey;
+}
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.red-box{
+    background-color: red;
+    float: left;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+.red-box:hover{
+    background-color: black;
+    color: aqua;
+    width: 200px;
+}
+.green-box{
+    background-color: green;
+    float: left;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+.green-box:hover{
+    background-color: pink;
+    color: black;
+    width: 200px;
+}
+.blue-box{
+    background-color: blue;
+    float: left;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+.blue-box:hover{
+    background-color: tomato;
+    color: blue;
+    width: 200px;
+}
+img{
+    width: 100px;
+    height: auto;
+    float: left;
+}
